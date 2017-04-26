@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Jocelyn James</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+<nav id="sidebar-wrapper">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#top">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Skills</a>
+      <a href="#portfolio">My Work</a>
+    </div>
+
+    <span onclick="openNav()"><i id="menu" class="fa fa-bars"></i></span>
+</nav>
+
+    <!-- <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul id="sideNav" class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$("#menu-close").click();>Jocelyn James</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick=$("#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="#services" onclick=$("#menu-close").click();>Skills</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$("#menu-close").click();>My Work</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+            </li>
+        </ul>
+    </nav> -->
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Jocelyn James</h1>
+            <h3>Web developer, human rights specialist, artist</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-lg-4">
+                  <img id="headshot" src="img/Headshot.jpg" width="373.05" height="410">
+              </div>
+                <!-- <div class="col-lg-12 text-center"> -->
+                <div id="about_description" class="col-md-3 col-lg-8">
+                  <h1>Who Am I?</h1>
+                    <h3>I am a multi-talented web developer with a diverse background and interests. I have traveled and lived all over the world, and speak English, French, Spanish, and some Arabic. I love doing anything artistic, especially if it relates to social justice and gender equality.</h3>
+                  <h1>Why Web Development?</h1>
+                    <h3>After earning my Bachelor's degree in sociology and my Master's in human rights with a focus on preventing violence against women, I noticed a gap in the market: a lack of tech knowledge and utilization in the nonprofit/NGO space. Realizing this, I undertook a four-month coding boot camp that would give me the tools I needed to fill this gap. With a preexisting passion for social justice and now possessing knowledge of multiple programming languages and databases, I am ready to help you and your organization take the next step into the digital space!</h3>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Skills -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Skills</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-tablet fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Technology</strong>
+                                </h4>
+                                <p>I have knowledge and experience in front-end, back-end, design, and troubleshooting.</p>
+                                <button id="myBtn">Learn More</button>
+                                <div id="myModal" class="modal">
+                                  <div class="modal-content">
+                                    <span id="closeBtn" class="close">&times;</span>
+                                    <p>I completed a four-month full-stack web development boot camp at Learn Academy, based in San Diego, CA. This was followed by an immersive internship that allowed me to not only utilize the skills I gained in the classroom, but acquire experience with more languages and frameworks. My passion is creating beautiful, modern, easily navigable websites for NGOs and nonprofits that enhance user experience while raising the profile of the organization.</p>
+                                    <table class="table">
+                                    <tr>
+                                      <th class="text-center">Languages</th>
+                                      <th class="text-center">Frameworks/Libraries</th>
+                                      <th class="text-center">Databases</th>
+                                    </tr>
+                                    <tr>
+                                      <td>HTML</td>
+                                      <td>Rails</td>
+                                      <td>SQL</td>
+                                    </tr>
+                                    <tr>
+                                      <td>CSS</td>
+                                      <td>Ember</td>
+                                      <td>ActiveRecord</td>
+                                    </tr>
+                                    <tr>
+                                      <td>JavaScript</td>
+                                      <td>JQuery</td>
+                                      <td>PostGreSQL</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Ruby</td>
+                                      <td>AJAX</td>
+                                      <td>Access</td>
+                                    <tr>
+                                      <td>Handlebars</td>
+                                      <td></td>
+                                      <td></td>
+                                  </table>
+                                  </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+<!-- <script src="modal.js"></script> -->
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                              <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-child fa-stack-1x text-primary"></i>
+                              </span>
+                                <h4>
+                                    <strong>Human Rights</strong>
+                                </h4>
+                                <p>I have both academic and practical experience in every aspect of human rights, from international law to on-the-ground implementation.</p>
+                                <button id="myBtn2">Learn More</button>
+                                <div id="myModal2" class="modal">
+                                  <div class="modal-content">
+                                    <span id="closeBtn2" class="close2">&times;</span>
+                                    <p>I obtained a Master’s in human rights from the University of London in 2010 and have professional experience in multiple areas of human rights. </p>
+                                    <h4 class=listHeader>Areas of Expertise:</h4>
+                                    <ul class="list">
+                                      <li>Gender-based violence</li>
+                                      <li>Trafficking prevention and recovery</li>
+                                      <li>Mental health</li>
+                                      <li>Refugee rights and services</li>
+                                      <li>Child rights and protection</li>
+                                    </ul>
+                                    <h4 class=listHeader>Professional Experience:</h4>
+                                    <ul class="list">
+                                      <li>Interpreter services coordination</li>
+                                      <li>Research</li>
+                                      <li>Content creation - blogs, newsletters, reports</li>
+                                      <li>Translation</li>
+                                      <li>Grantwriting</li>
+                                    </ul>
+                                      <h4 class=listHeader>Organizations I've worked with:</h4>
+                                      <ul class="list">
+                                        <li>Catholic Charities of Boston</li>
+                                        <li>ChildHope UK</li>
+                                        <li>Violence Prevention Research Unit - Queen Mary University of London</li>
+                                        <li>International Justice Mission</li>
+                                        <li>San Diego Regional Human Trafficking and CSEC Advisory Council</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+<!-- <script src="modal.js"></script> -->
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-paint-brush fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Art/Music</strong>
+                                </h4>
+                                <p>As an artist and a singer/songwriter, my work focuses largely on themes of social justice.</p>
+                                <button id="myBtn3">Learn More</button>
+                                <div id="myModal3" class="modal">
+                                  <div class="modal-content">
+                                    <span id="closeBtn3" class="close3">&times;</span>
+                                    <p>I have a lifelong passion for creating music as well as visual art, and much of the work I produce is heavily influenced by human rights issues, especially trauma recovery and women’s rights. I have performed at various venues in London and have also utilized my music to facilitate social issues seminars in my capacity as a teacher. My artwork has been featured at a private gallery show in Boston, and I have used a series of sketches entitled ‘Weeping Women’ to facilitate dialogue around the topic of human trafficking and recovery.</p>
+                                  </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-graduation-cap fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Teaching</strong>
+                                </h4>
+                                <p>I have experience teaching classes, leading seminars, and providing one-to-one tutoring.</p>
+                                <button id="myBtn4">Learn More</button>
+                                <div id="myModal4" class="modal">
+                                  <div class="modal-content">
+                                    <span id="closeBtn4" class="close4">&times;</span>
+                                    <p>With over three years of experience teaching ESL at all levels, both in a classroom setting and one-on-one, I am proficient in curriculum creation and in tailoring information to connect with students of all ages and levels. </p>
+                                    <h4 class=listHeader>Areas of Expertise:</h4>
+                                    <ul class="list">
+                                      <li>TOEFL preparation</li>
+                                      <li>IELTS preparation</li>
+                                      <li>Grammar and essay writing</li>
+                                      <li>Resume and cover letter writing</li>
+                                    </ul>
+                                    <h4 class=listHeader>Social Issues Seminars:</h4>
+                                    <ul class="list">
+                                      <li>Gender equality</li>
+                                      <li>Violence prevention</li>
+                                      <li>Economic disparity</li>
+                                      <li>Nonviolent protest</li>
+                                    </ul>
+                                  </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <h1>My Work</h1>
+        </div>
+    </aside>
+
+    <!-- Tech Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Web Development Projects</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                              <div class="portfolio-item">
+                                <p>VolunteerUp</p>
+                                <a id="myBtn9" href="#myModal9">
+                                    <img id="volunteerUp" class="img-portfolio img-responsive" src="img/VolunteerUP.png">
+                                </a>
+                                <div id="myModal9" class="modal">
+                                  <div class="modal-content">
+                                    <span id="closeBtn9" class="close9">&times;</span>
+                                    <h2>Group Project: VolunteerUP</h2>
+                                    <p>This project was a collaboration between myself and five other individuals to produce a functioning web application that would connect people with local short-term volunteer opportunities. Utilizing Ruby on Rails, JavaScript, HTML, and CSS, I contributed code for integrating login with Facebook and Twitter, breadcrumb navigation, styling and design, and bug fixes. Each piece of the project was also supported by tests written in RSpec and Capybara to ensure flexibility of code.</p> </br>
+                                    <p>You can see the site deployed<a href="https://volunteerup.herokuapp.com/" target="_blank"> here.</a></p>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                              <p>Username &amp; Password Checker</p>
+                              <a id="myBtn10" href="#myModal10">
+                                  <img id="passwordCheck" class="img-portfolio img-responsive" src="img/keyboard.jpg">
+                              </a>
+                              <div id="myModal10" class="modal">
+                                <div class="modal-content">
+                                  <span id="closeBtn10" class="close10">&times;</span>
+                                  <h2>Username &amp; Password Checker</h2>
+                                  <p>This project utilized JavaScript to create a system for checking that given usernames and passwords contained the required characters.</p> </br>
+                                  <p>You can see the code for this project <a href="https://github.com/missjames008/DOMexercises_KJ" target="_blank"> here.</a></p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                              <p>Tech Talk: Decoding the Future of Refugee Resettlement</p>
+                              <a id="myBtn11" href="#myModal11">
+                                  <img id="refugees" class="img-portfolio img-responsive" src="img/refugees_coding2.png">
+                              </a>
+                              <div id="myModal11" class="modal">
+                                <div class="modal-content">
+                                  <span id="closeBtn11" class="close11">&times;</span>
+                                  <h2>Decoding the Future of Refugee Resettlement</h2>
+                                  <p>This tech talk focuses on an idea that is gaining traction in both the tech industry as well as the human rights sector: teaching refugees to code as a means of providing self-sufficiency. I have turned this presentation, which I have given several times to various audiences, into a blog post that outlines the situation and the potential benefits to refugees, host countries, and potential employers.</p> </br>
+                                  <p>You can read the blog post <a href="https://www.learnacademy.org/blog" target="_blank"> here.</a></p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                              <p>Apartment Finder</p>
+                              <a id="myBtn12" href="#myModal12">
+                                  <img id="apartment" class="img-portfolio img-responsive" src="img/apartment_map.png">
+                              </a>
+                              <div id="myModal12" class="modal">
+                                <div class="modal-content">
+                                  <span id="closeBtn12" class="close12">&times;</span>
+                                  <h2>Apartment Finder</h2>
+                                  <p>This project utilized Ruby on Rails and gems Devise, Rolify, and CanCanCan to create a web application that allows you to log in to search for apartments. Based on your role - client or administrator - you can search, add, edit, and delete apartment entries.</p> </br>
+                                  <p>You can see a preliminary version of the app deployed<a href="https://apartmentapp.herokuapp.com/" target="_blank"> here.</a></p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                    <!-- <a href="#" class="btn btn-dark">View More Items</a> -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+<!-- Art Portfolio -->
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <h2>Art Portfolio</h2>
+                <hr class="small">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="portfolio-item">
+                          <a id="myBtn5" href="#myModal5">
+                              <img id=blueElephant src="img/elephant_art.jpg"width="300" height="400">
+                          </a>
+                          <div id="myModal5" class="modal">
+                            <div class="modal-content">
+                              <span id="closeBtn5" class="close5">&times;</span>
+                              <h2>Blue Elephant</h2>
+                              <p>Inspired by traditional Indian mehendi (henna) designs, this work uses acrylics texturized with gel medium to create a layered silhouette that blends modern abstraction with traditional styles. </p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="portfolio-item">
+                          <a id="myBtn6" href="#myModal6">
+                              <img id=black_white src="img/b_w_art.jpeg"width="300" height="400">
+                          </a>
+                          <div id="myModal6" class="modal">
+                            <div class="modal-content">
+                              <span id="closeBtn6" class="close6">&times;</span>
+                              <h2>Weeping Woman</h2>
+                              <p>The background of this work is composed of newspaper headlines about acts of violence, in multiple languages, transferred by hand using an acid blending marker. The foreground silhouette, painted with acrylics, exemplifies the heartbreak caused by this worldwide violence. </p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="portfolio-item">
+                          <a id="myBtn7" href="#myModal7">
+                              <img id=desert src="img/desert_art.jpeg"width="300" height="400">
+                          </a>
+                          <div id="myModal7" class="modal">
+                            <div class="modal-content">
+                              <span id="closeBtn7" class="close7">&times;</span>
+                              <h2>Desert Rose</h2>
+                              <p>Inspired by the cover art for Paolo Coelho’s ‘The Zahir,’ this piece features newspaper cuttings as a background, all of which center around the topic of human rights violations. The foreground, an impressionistic rendering of a woman gazing at the horizon, evokes both freedom and sadness as the solitary figure illustrates both independence and loneliness. </p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="portfolio-item">
+                          <a id="myBtn8" href="#myModal8">
+                              <img id=manWoman src="img/man_woman.JPG"width="300" height="400">
+                          </a>
+                          <div id="myModal8" class="modal">
+                            <div class="modal-content">
+                              <span id="closeBtn8" class="close8">&times;</span>
+                              <h2>There Must Be a Better Way</h2>
+                              <p>The outline of a man and a woman embracing is superimposed over newspaper and magazine clippings portraying the many negative aspects present in romantic relationships. The most prominent of these – cuttings spliced together to form the phrase ‘There must be a better way’ – indicates the hope that these unhealthy patterns do not have to persist if we are willing to rethink the way we relate to one another. </p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+<script src="modal.js"></script>
+                <!-- /.row (nested) -->
+                <!-- <a href="#" class="btn btn-dark">View More Items</a> -->
+            </div>
+            <!-- /.col-lg-10 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+<!-- Human Rights Work -->
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <h2>Human Rights &amp; Teaching</h2>
+                <!-- Replace existing pics and #links with links to projects (blog posts/writing) -->
+                <hr class="small">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="portfolio-item">
+                          <p>Child Rights in Action: blog post for ChildHope UK</p>
+                            <a href="http://child-rights-in-action.blogspot.com/2010/04/upcoming-ilo-conferences-review.html" target="_blank">
+                                <img class="img-portfolio img-responsive" src="img/India_children.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="portfolio-item">
+                          <p>Teaching slang, idioms, and phrasal verbs</p>
+                            <a href="http://connectenglishsandiego.blogspot.com/2015/05/slang-idioms-phrasal-verbs-sip-class-is.html" target="_blank">
+                                <img class="img-portfolio img-responsive" src="img/Teaching_ESL.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="portfolio-item">
+                          <p>From Where I Stand: blog post on the 2011 London riots</p>
+                            <a href="http://thenot-so-quietamerican.blogspot.com/2011/08/obligatory-post-on-london-riots-from.html" target="_blank">
+                                <img class="img-portfolio img-responsive" src="img/London_riots.JPG">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="portfolio-item">
+                          <p>MA Dissertation: Rehabilitating Survivors of Human Trafficking</p>
+                            <a href="dissertationFINAL-1.pdf" target="_blank">
+                                <img style="border: 3px solid black" class="img-portfolio img-responsive" src="img/dissertation.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row (nested) -->
+                <!-- <a href="#" class="btn btn-dark">View More Items</a> -->
+            </div>
+            <!-- /.col-lg-10 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Contact me for help with website design and maintenance, seminars and trainings in technology and human rights, and inquiries regarding art commissions and showings.</h3>
+                    <!-- <a href="#" class="btn btn-lg btn-light">Click Me!</a>
+                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a> -->
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Map -->
+    <!-- <section id="contact" class="map"> -->
+        <!-- <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe> -->
+        <!-- <br />
+        <small> -->
+            <!-- <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a> -->
+        <!-- </small>
+        </iframe>
+    </section> -->
+
+    <!-- Footer -->
+    <footer>
+        <div id="contact" class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Jocelyn James</strong>
+                    </h4>
+                    <p>New York, NY, USA /
+                        <br>London, UK</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (619) 942-8441</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:missjames008@gmail.com">missjames008@gmail.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://github.com/missjames008" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/jocelyn-james" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/therealJocelynJ" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Jocelyn James 2017</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map').on('click', onMapClickHandler);
+    </script>
+
+
+
+</body>
+
+</html>
