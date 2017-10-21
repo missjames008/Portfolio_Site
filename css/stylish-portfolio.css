@@ -188,6 +188,13 @@ hr.small {
    width: 40%; /* Could be more or less, depending on screen size */
 }
 
+@media (max-width: 767px) {
+  .modal-content {
+      height: 125%;
+      width: 110%;
+    }
+  }
+
 /* The Close Button */
 .close,
 .close2,
@@ -316,6 +323,12 @@ hr.small {
 .img-portfolio {
     margin: 0 auto;
     height: 400px;
+}
+
+.img-portfolio-HR {
+      margin: 0 auto;
+      height: 400px;
+  }
 }
 
 .img-portfolio:hover {
